@@ -24,7 +24,7 @@ $content = Import-Csv B:\PowerShell\changepwd.csv
 foreach ($user in $content) {
 
 #Create random PWD
-$password = Get-RandomCharacters -length 3 -characters 'abcdefghiklmnoprstuvwxyz'
+$password = Get-RandomCharacters -length 3 -characters 'ABCDEFGHIJKLMNOPRSTUVWXYZ'
 $password += "."
 $password += Get-RandomCharacters -length 3 -characters '1234567890'
 $newPassword = ConvertTo-SecureString -AsPlainText $password -Force
