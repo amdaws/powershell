@@ -39,7 +39,7 @@ Connect-MsolService -Credential $credential
 
 #Connect to SharePoint
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-Connect-SPOService -Url https://example-admin.sharepoint.com -credential $credential
+#Connect-SPOService -Url https://example-admin.sharepoint.com -credential $credential
 
 #Connect to Skype for Business Online.
 Import-Module SkypeOnlineConnector
