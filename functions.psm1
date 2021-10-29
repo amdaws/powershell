@@ -9,3 +9,19 @@ function Scramble-String([string]$inputString){
     $outputString = -join $scrambledStringArray
     return $outputString 
 }
+
+function MS365SMPT {
+    param (
+        OptionalParameters
+        SMTP server: smtp.office365.com
+
+Port Number: 587
+
+Encryption method: STARTTLS
+
+Username: Your Office 365 email address
+
+Password: Your Office 365 password
+    )
+    
+}
